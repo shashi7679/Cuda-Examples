@@ -1,4 +1,8 @@
-﻿//for __syncthreads()
+﻿/*You are given a 1024x1024 matrix A where each thread is handling A[i][j]. 
+Each row of the matrix is assigned to one block of the GPU. 
+Use shared memory to update A[i][j] to A[i][j+1].
+*/
+//for __syncthreads()
 #ifndef __CUDACC__ 
 #define __CUDACC__
 #endif
